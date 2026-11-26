@@ -1,5 +1,5 @@
 {
-  "name": "srilakshmi-dental-clinic",
+  "name": "bharathkumar-dental-clinic",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eranna-yadav/SRILAKSHMI-DENTAL-CLINIC.git"
+    "url": "git+https://github.com/eranna-yadav/bharathkumar-detalclinic.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eranna-yadav/SRILAKSHMI-DENTAL-CLINIC/issues"
+    "url": "https://github.com/eranna-yadav/bharathkumar-detalclinic/issues"
   },
-  "homepage": "https://github.com/eranna-yadav/SRILAKSHMI-DENTAL-CLINIC#readme",
+  "homepage": "https://github.com/eranna-yadav/bharathkumar-detalclinic#readme",
   "dependencies": {
     "framer-motion": "^14.14.0",
     "lucide-react": "^1.79.0",

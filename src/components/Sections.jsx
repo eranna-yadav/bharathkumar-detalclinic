@@ -64,6 +64,7 @@ export function BeforeAfter() {
 export function Testimonials() {
   const [i, setI] = useState(0)
   const n = testimonials.length
+  if (n === 0) return null
   const pair = [testimonials[i % n], testimonials[(i + 1) % n]]
   return (
     <section className="bg-navy py-20 lg:py-28">

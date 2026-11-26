@@ -4,20 +4,20 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Live website address (no trailing slash). Used for SEO, sitemap and share links.
-const siteUrl = 'https://srilakshmi-dental-clinic.vercel.app'
+const siteUrl = 'https://bharathkumar-dental-clinic.vercel.app'
 
 const clinic = {
-  name: 'Srilakshmi Dental Clinic',
-  shortName: 'Srilakshmi', // used in the chat assistant title
-  doctor: 'Dr. SomShekhar',
+  name: 'Bharath Kumar Dental Clinic',
+  shortName: 'Bharath Kumar', // used in the chat assistant title
+  doctor: 'Dr. Bharath Kumar',
   doctorRole: 'Dental Surgeon',
-  phoneDisplay: '094485 80245', // how the number is shown
-  phoneTel: '+919448580245', // for tap-to-call (with country code)
-  whatsapp: '919448580245', // WhatsApp number: country code + number, digits only
+  phoneDisplay: '79474 32145', // how the number is shown
+  phoneTel: '+917947432145', // for tap-to-call (with country code)
+  whatsapp: '917947432145', // WhatsApp number: country code + number, digits only
   city: 'Hassan',
-  shortArea: 'Park Road, Hassan', // shown in the top bar
+  shortArea: 'Kalabhavana Road, Hassan', // shown in the top bar
   address: {
-    street: 'Ground floor, Park Rd, opp. to Sanskrutha Bhavana, Rangoli Halla',
+    street: 'Kalabhavana Road, above Mahalakshmi Sweets, opp. Maharaja Park, Penshan Mohalla',
     city: 'Hassan',
     region: 'Karnataka',
     regionCode: 'IN-KA',
@@ -25,22 +25,20 @@ const clinic = {
     country: 'IN',
   },
   addressLines: [
-    'Ground floor, Park Rd, opp. to Sanskrutha Bhavana',
-    'Rangoli Halla, Hassan, Karnataka 573201',
+    'Kalabhavana Road, above Mahalakshmi Sweets, opp. Maharaja Park',
+    'Penshan Mohalla, Hassan, Karnataka 573201',
   ],
   // What Google Maps should search for (map embed + "Get directions").
-  mapQuery: 'Srilakshmi Dental Clinic, Park Rd, opp. Sanskrutha Bhavana, Rangoli Halla, Hassan, Karnataka 573201',
-  // TODO: confirm the real clinic timings before going live.
+  mapQuery: 'DR BHARAT, Kalabhavana Road, opposite Maharaja Park, Penshan Mohalla, Hassan, Karnataka 573201',
   hours: [
-    { day: 'Monday – Saturday', time: '10:00 AM – 1:30 PM' },
-    { day: 'Evening', time: '5:00 PM – 8:30 PM' },
-    { day: 'Sunday', time: 'By appointment' },
+    { day: 'Monday – Saturday', time: '10:00 AM – 7:30 PM' },
+    { day: 'Sunday', time: 'Closed' },
   ],
 }
 
 // Logo text and colours. Colours are used across the whole site.
 const brand = {
-  logoTop: 'SRILAKSHMI',
+  logoTop: 'BHARATH KUMAR',
   logoBottom: 'Dental Clinic',
   colors: {
     primary: '#1E3FF5',
@@ -54,10 +52,10 @@ const brand = {
 // Search engine and social-share text.
 const seo = {
   title: `${clinic.name} | Best Dentist in ${clinic.city}, ${clinic.address.region}`,
-  description: `${clinic.name} on Park Road, ${clinic.city} offers root canal treatment, dental implants, braces, teeth whitening, crowns and kids dentistry by ${clinic.doctor}. Call ${clinic.phoneDisplay} to book.`,
+  description: `${clinic.name} on Kalabhavana Road, ${clinic.city} offers root canal treatment, dental implants, braces, teeth whitening, crowns and kids dentistry by ${clinic.doctor}. Call ${clinic.phoneDisplay} to book.`,
   keywords: `dentist in ${clinic.city}, dental clinic ${clinic.city}, ${clinic.name}, ${clinic.doctor}, root canal ${clinic.city}, dental implants ${clinic.city}, braces ${clinic.city}, teeth whitening ${clinic.city}`,
   shareTitle: `${clinic.name} | Dentist in ${clinic.city}`,
-  shareDescription: `Gentle, modern dental care for the whole family on Park Road, ${clinic.city}. Book with ${clinic.doctor}: ${clinic.phoneDisplay}.`,
+  shareDescription: `Gentle, modern dental care for the whole family on Kalabhavana Road, ${clinic.city}. Book with ${clinic.doctor}: ${clinic.phoneDisplay}.`,
   shareTagline: 'Root canal · Implants · Braces · Whitening', // line on the link-preview image
   locale: 'en_IN',
   priceRange: '₹₹',
@@ -81,7 +79,7 @@ const text = {
     eyebrow: 'About Us',
     title: 'Expert, Gentle Care',
     highlight: 'for Every Smile',
-    body: `${clinic.name} is a family dental clinic on Park Road, ${clinic.city}, led by ${clinic.doctor}. We focus on comfortable treatment, clear explanations and results that last — so every visit leaves you smiling.`,
+    body: `${clinic.name} is a family dental clinic on Kalabhavana Road, ${clinic.city}, led by ${clinic.doctor}. We focus on comfortable treatment, clear explanations and results that last — so every visit leaves you smiling.`,
     points: [
       'Complete dental care under one roof',
       'Sterilised instruments and modern equipment',
@@ -149,18 +147,16 @@ const steps = [
   { title: 'Ongoing Care & Follow-Up', icon: 'HeartPulse', text: 'Follow-up visits and tips to keep your results healthy for years.' },
 ]
 
-// TODO: replace these with real patient reviews (e.g. from Google) before going live.
-const testimonials = [
-  { name: 'Patient name', role: 'Root Canal Treatment', rating: 5, title: 'Painless and Professional', text: 'Replace this text with a real review from one of your patients. Short, specific reviews work best.' },
-  { name: 'Patient name', role: 'Teeth Cleaning', rating: 5, title: 'Highly Recommended', text: 'Replace this text with a real review from one of your patients. Mention the treatment they received.' },
-  { name: 'Patient name', role: 'Braces', rating: 5, title: 'Friendly and Caring', text: 'Replace this text with a real review from one of your patients, with their permission.' },
-]
+// Add real patient reviews (with permission) here, e.g.
+// { name: 'Name', role: 'Root Canal Treatment', rating: 5, title: 'Painless', text: '...' }
+// The Testimonials section stays hidden while this list is empty.
+const testimonials = []
 
 // Also used by the chat assistant and Google's FAQ results.
 const faqs = [
   { q: 'What services do you offer?', a: 'We offer complete dental care: check-ups and cleaning, fillings, root canal treatment, extractions, crowns and bridges, dental implants, braces and aligners, teeth whitening, smile makeovers and children’s dentistry.' },
   { q: 'Do I need to make an appointment?', a: `Appointments are recommended so we can keep waiting time short. Call ${clinic.phoneDisplay} or send a WhatsApp message and we will confirm a time.` },
-  { q: 'Do you accept walk-in patients?', a: 'Yes, walk-ins are welcome during clinic hours. Patients with appointments are seen first, so calling ahead is best.' },
+  { q: 'Do you accept walk-in patients?', a: 'Yes, walk-ins are welcome during clinic hours (Monday to Saturday, 10 AM – 7:30 PM; closed on Sunday). Patients with appointments are seen first, so calling ahead is best.' },
   { q: 'What should I do in a dental emergency?', a: `For severe tooth pain, swelling, a broken tooth or injury, call us immediately on ${clinic.phoneDisplay}. We will do our best to see you the same day.` },
   { q: 'Is root canal treatment painful?', a: 'Modern root canal treatment is done under local anaesthesia and feels similar to getting a filling. It actually relieves the pain caused by the infected tooth.' },
   { q: 'How often should I visit the dentist?', a: 'A check-up and cleaning every six months is recommended for most people. Some gum or orthodontic treatments need more frequent visits.' },

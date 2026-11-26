@@ -1,6 +1,6 @@
-# Srilakshmi Dental Clinic — Website
+# Bharath Kumar Dental Clinic — Website
 
-React + Vite + Tailwind CSS + Framer Motion. Live at https://srilakshmi-dental-clinic.vercel.app
+React + Vite + Tailwind CSS + Framer Motion. Live at https://bharathkumar-dental-clinic.vercel.app
 
 ```bash
 npm install
@@ -16,8 +16,8 @@ Photos are in `public/images/`.
 **Reusing this site for another clinic:** see [TEMPLATE.md](TEMPLATE.md).
 
 ## Before going live
-- **Clinic hours** in `site.config.js` are placeholders — confirm the real timings.
-- **Testimonials** in `site.config.js` are placeholders — replace with real patient reviews.
+- **Testimonials** are empty (section hidden) — add real patient reviews in `site.config.js`.
+- **Photos** in `public/images/` are from the template — replace with the clinic's own.
 
 ## Features
 - Booking form that sends details to the clinic's WhatsApp
